@@ -18,7 +18,7 @@
 | A  |JLT |Jump to the address in Arg1 if Arg2 < Arg3               |
 | A  |JGT |Jump to the address in Arg1 if Arg2 > Arg3               |
 | J  |JAR |Jump to the address in Arg1, store current PC value in RA|
-| J  |RDI |Reads an integer from stdio and stores it in Arg1        |
+| N  |MOV |Copy the contents of Arg1 to Arg2                        |
 
 ### Instruction types
 |Type  |Opcode         |Arg1               |Arg2             |Arg3              |Total size|
@@ -39,4 +39,4 @@
 |R4  |General purpose                                                           |
 |RA  |JAR return address                                                        |
 |IM  |12-bit immediates loaded through LDIM                                     |
-|OP  |Output: any data saved here will be printed as a utf-8 character to stdout|
+|IO  |Input/output. <br /> Input: reads a utf-8 character from stdin with every read iterating one character <br /> Output: any data saved here is printed as a utf-8 character to stdout|
