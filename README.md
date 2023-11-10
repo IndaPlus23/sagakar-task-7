@@ -42,6 +42,6 @@
 |IO  |Input/output. <br /> Input: reads a utf-8 character from stdin with every read iterating one character <br /> Output: any data saved here is printed as a utf-8 character to stdout|
 
 ### Syntax nice to haves
-Jump labels are declared like this: `(LABEL)`
-Constants can be either a number or a char and are declared like this: `$CONSTANT_NAME 1234` or this: `$CONSTANT_NAME 'A'`
-Comments are made like this: `MOV R1 R2 // Moves R2 to R1`
+Jump labels are declared like this: `(LABEL)`  
+Constants can be either a number or a char and are declared like this: `$CONSTANT_NAME 1234` or this: `$CONSTANT_NAME 'A'`  
+Comments are made like this: `MOV R1 R2 // Moves R2 to R1`  
