@@ -18,7 +18,7 @@
 | A  |JLT |Jump to the address in Arg1 if Arg2 < Arg3               |
 | A  |JGT |Jump to the address in Arg1 if Arg2 > Arg3               |
 | J  |JAR |Jump to the address in Arg1, store current PC value in RA|
-| N  |MOV |Copy the contents of Arg1 to Arg2                        |
+| N  |MOV |Copy the contents of Arg2 to Arg1                        |
 
 ### Instruction types
 |Type  |Opcode         |Arg1               |Arg2             |Arg3              |Total size|
@@ -40,3 +40,8 @@
 |RA  |JAR return address                                                        |
 |IM  |12-bit immediates loaded through LDIM                                     |
 |IO  |Input/output. <br /> Input: reads a utf-8 character from stdin with every read iterating one character <br /> Output: any data saved here is printed as a utf-8 character to stdout|
+
+### Syntax nice to haves
+Jump labels are declared like this: `(LABEL)`
+Constants can be either a number or a char and are declared like this: `$CONSTANT_NAME 1234` or this: `$CONSTANT_NAME 'A'`
+Comments are made like this: `MOV R1 R2 // Moves R2 to R1`
