@@ -93,7 +93,7 @@ impl Program {
 
     fn execute_type_j(&mut self, instruction: &Instruction) {
         let target = self.read_from_register(*instruction.register1.as_ref().unwrap());
-        self.write_to_register( 7, (self.program_counter - 1) as u32);
+        self.write_to_register( 7, (self.program_counter) as u32);
         self.program_counter = target as usize;
     }
 
